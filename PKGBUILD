@@ -22,21 +22,21 @@
 ################################################################################
 CHECK=            # Run tests. May fail, this is developement after all.
 
-CLANG=            # Use clang.
+CLANG="YES"            # Use clang.
 
 GOLD=             # Use the gold linker.
 
 LTO="YES"         # Enable link-time optimization. Read emacs's INSTALL before
                   # attempting to use it with clang.
 
-JIT=              # Enable native just-in-time compilation. libgccjit is in AUR.
+JIT="YES"              # Enable native just-in-time compilation. libgccjit is in AUR.
                   # This compiles only performance critical elisp files.
                   #
                   # To compile all elisp on demand, add
                   #    (setq comp-deferred-compilation t)
                   # to your .emacs file.
 
-AOT=              # Precompile all included elisp. It takes a long time.
+AOT="YES"              # Precompile all included elisp. It takes a long time.
                   # You still need to enable on-demand compilation
                   # for your own packages.
 
@@ -57,7 +57,7 @@ GTK2=             # GTK2 support. Why would you?
                
 NOCAIRO=          # Disable here. 
                
-XWIDGETS=         # Use GTK+ widgets pulled from webkit2gtk. Usable.
+XWIDGETS='YES'         # Use GTK+ widgets pulled from webkit2gtk. Usable.
                
 DOCS_HTML=        # Generate and install html documentation.
                
