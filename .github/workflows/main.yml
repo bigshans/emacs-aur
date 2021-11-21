@@ -1,0 +1,16 @@
+name: Github Action Build PKGBUILD
+on: push
+jobs:
+  build_for_arch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GNU Emacs. Development master branch.
+        uses: antman666/build-aur-action@mine
+        with:
+          repo-name: emacs-aur
+      - uses: ncipollo/release-action@v1.8.6
+        with:
+          allowUpdates: true
+          tag: "v29.0.50.151057"
+          artifacts: "./*/*.zst"
+          token: ${{ secrets.GITHUB_TOKEN }}
