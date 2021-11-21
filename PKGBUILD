@@ -29,7 +29,7 @@ GOLD=             # Use the gold linker.
 LTO="YES"         # Enable link-time optimization. Read emacs's INSTALL before
                   # attempting to use it with clang.
 
-JIT="YES"              # Enable native just-in-time compilation. libgccjit is in AUR.
+JIT=              # Enable native just-in-time compilation. libgccjit is in AUR.
                   # This compiles only performance critical elisp files.
                   #
                   # To compile all elisp on demand, add
