@@ -15,5 +15,5 @@ jobs:
         with:
           allowUpdates: true
           tag: "v29.0.50.151057"
-          artifacts: "./*/*.zst"
+          artifacts: "./*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
