@@ -9,6 +9,8 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: GNU Emacs. Development master branch.
         uses: antman666/build-aur-action@mine
+        run: |
+          yay -S libgccjit
         with:
           repo-name: emacs-aur
       - uses: ncipollo/release-action@v1.8.6
