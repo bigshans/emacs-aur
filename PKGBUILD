@@ -36,7 +36,7 @@ JIT=              # Enable native just-in-time compilation. libgccjit is in AUR.
                   #    (setq comp-deferred-compilation t)
                   # to your .emacs file.
 
-AOT="YES"              # Precompile all included elisp. It takes a long time.
+AOT=              # Precompile all included elisp. It takes a long time.
                   # You still need to enable on-demand compilation
                   # for your own packages.
 
