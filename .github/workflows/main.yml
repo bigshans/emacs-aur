@@ -1,5 +1,8 @@
 name: Github Action Build PKGBUILD
-on: push
+on:
+  push:
+  schedule:
+    - cron: '0 8-21 * * *'
 jobs:
   build_for_arch:
     runs-on: ubuntu-latest
@@ -14,6 +17,6 @@ jobs:
       - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: true
-          tag: "v29.0.50.152001"
+          tag: "v29.0.50"
           artifacts: "./*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
