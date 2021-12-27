@@ -1,8 +1,7 @@
 name: Github Action Build PKGBUILD
-on:
-  push:
-  schedule:
-    - cron: '0 8-21 * * *'
+on: push:
+#  schedule:
+#    - cron: '0 8-21 * * *'
 jobs:
   build_for_arch:
     runs-on: ubuntu-latest
